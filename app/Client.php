@@ -10,6 +10,6 @@ class Client extends Model
     //
     public function compras()
     {
-    	$this->hasMany(VentasDetail::class, 'client_id');
+    	$this->hasMany(Venta::class, 'client_id');
     }
 }
